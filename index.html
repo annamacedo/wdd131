@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Anna Paula Macedo da Rosa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Anna Paula Macedo da Rosa BYU-Idaho WDD 131 course home page">
+    <meta name="author" content="Anna Paula Macedo da Rosa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Anna Paula Macedo da Rosa</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Anna Paula Macedo da Rosa</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/uianna/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/17?lang=eng&id=p9#p9">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Anna Paula Macedo da Rosa, 27 years old. I served as a missionary for The Church of Jesus Christ of Latter-day Saints, embarking on a transformative journey in Ribeirão Preto from 2016 to 2017 that enriched my life with invaluable experiences and lessons. I have been married for 5 years. Together, we value the joy of shared experiences, especially when venturing into new cultures, immersing ourselves in new landscapes and savoring exotic cuisines. I am also captivated by video games, where my adventurous spirit finds its playground. In terms of hobbies, besides traveling and gaming, I really like watching series.</p>
+                <img src="images/profile.jpeg" alt="Profile image">
+            </div>
+        </section>
+        <section class="place-info">
+            <h2>Brazil</h2>
+            <div class="place-content">
+                <img src="images/brazil-flag.png" alt="Brazil flag image">
+                <p>Brazil, the largest country in South America, is celebrated for its vibrant culture, diverse ecosystems, and dynamic urban landscapes. Spanning a vast area, Brazil features the Amazon Rainforest, the world's largest tropical rainforest, teeming with unparalleled biodiversity. The country's geography also includes the stunning Pantanal wetlands, the majestic Iguazu Falls, and the iconic beaches of Rio de Janeiro and Bahia. Brazil's cultural heritage is a melting pot, influenced by indigenous, African, and European traditions, reflected in its music, dance, and cuisine. Samba and bossa nova rhythms echo through the streets, especially during the famous Carnival festival. The Brazilian cuisine is a flavorful journey, with dishes like feijoada and acarajé. Brazil's warm tropical climate supports a wealth of outdoor activities, from exploring the Amazon and snorkeling in Fernando de Noronha to hiking in Chapada Diamantina. Rich in history, Brazil offers a unique blend of colonial architecture and modern urban development, making it a captivating destination for travelers.</p>
+            </div>
+        </section>
+        <section class="web-dev-resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/anna_paulamacedo_1cb2eb6">Dev.to Community Profile</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://pathfinder.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.figma.com/design/Yeqk4CHMk5csdPPaCgW2CS/Gooday?node-id=4-3441&t=YQ5Kg4axtK5TDLBJ-1">Figma Project</a></li>
+                <li><a href="https://www.behance.net/annamacedo0">Behance Profile</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Anna Paula Macedo da Rosa, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
