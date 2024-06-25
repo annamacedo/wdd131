@@ -1,33 +1,30 @@
 @media (min-width: 768px) {
-
     header h1 {
-		margin: 0;
-		font-size: 2rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.5rem; 
-        text-align: center; 
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     #menu {
-        display: none; 
+        display: none;
     }
 
     .navigation {
-        flex-direction: row; 
-        justify-content: flex-start; 
-        position: static; 
-        height: auto; 
-		justify-content: right;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        height: auto;
     }
 
     .navigation a {
-        display: inline-block; 
+        display: inline-block;
         padding: 0.5rem 1rem;
-        color: #fff; 
-        background-color: #333; 
-        margin-right: 2rem; 
+        color: #fff;
+        background-color: #333;
+        margin-right: 2rem;
     }
 
     .navigation a:hover {
@@ -35,8 +32,8 @@
     }
 
     .gallery {
-        display: grid; 
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
