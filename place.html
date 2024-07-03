@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rio de Janeiro</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Rio de Janeiro view" width="1500" height="750">
+            </picture>
+        </div>
+        <div class="content">
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 1,221 sq km</li>
+                    <li>Population: 6,748,000</li>
+                    <li>Founded: March 1, 1565</li>
+                    <li>Official Language: Portuguese</li>
+                    <li>Currency: Brazilian Real (BRL)</li>
+                    <li>Time Zone: UTC-3</li>
+                    <li>Calling Code: +55 21</li>
+                    <li>Internet TLD: .br</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather <span class="weather-icon"></span></h2>
+                <ul>
+                    <li>Temperature: 25°C</li>
+                    <li>Conditions: Sunny</li>
+                    <li>Wind: 15 km/h</li>
+                    <li>Wind Chill: <span id="wind-chill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> <span id="author"></span> <span id="location"></span></p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
