@@ -4,8 +4,8 @@
     --text-color: #FFFFFF;
     --header-bg-color: #002776;
     --font-family: Arial, sans-serif;
-    --container-bg-color: #FFFFFF; /* Fundo branco para data e weather */
-    --container-text-color: #000000; /* Texto preto para data e weather */
+    --container-bg-color: #FFFFFF; 
+    --container-text-color: #000000; 
 }
 
 body {
@@ -30,39 +30,39 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Ocupa toda a largura */
+    width: 100%; 
 }
 
 .hero {
     width: 100%;
-    height: 50vh; /* Ajuste a altura conforme necessário */
-    overflow: hidden; /* Oculta a parte excedente da imagem */
+    height: 50vh; 
+    overflow: hidden;
 }
 
 .hero picture, .hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    object-fit: cover; 
     display: block;
 }
 
 .content {
-    width: 100%; /* Ocupa toda a largura */
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .data, .weather {
-    background-color: var(--container-bg-color); /* Fundo branco */
-    color: var(--container-text-color); /* Texto preto */
+    background-color: var(--container-bg-color); 
+    color: var(--container-text-color); 
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    text-align: left; /* Alinhamento do texto */
+    text-align: left; 
 }
 
 .data ul, .weather ul {
@@ -73,7 +73,7 @@ main {
 
 .data ul li strong,
 .weather ul li strong {
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
 }
 
 footer {
@@ -82,7 +82,7 @@ footer {
     background-color: var(--header-bg-color);
     color: var(--text-color);
     width: 100%;
-    flex-shrink: 0; /* Garante que o footer não encolha */
+    flex-shrink: 0; 
 }
 
 h2 {
@@ -90,30 +90,30 @@ h2 {
 }
 
 .data h2, .weather h2 {
-    color: var(--header-bg-color); /* Azul para os títulos "data" e "weather" */
+    color: var(--header-bg-color); 
 }
 
 @media (max-width: 767px) {
     body {
-        background-color: var(--header-bg-color); /* Cor de fundo para telas pequenas */
+        background-color: var(--header-bg-color); 
     }
     .hero {
-        height: 80vh; /* Ajuste a altura conforme necessário */
+        height: 80vh; 
     }
 
     .data, .weather {
-        width: calc(100% - 20px); /* Ocupa toda a largura com margem de 10px de cada lado */
-        margin: 10px; /* Margem para alinhamento */
-        padding: 15px; /* Ajuste o padding conforme necessário */
+        width: calc(100% - 20px); 
+        margin: 10px; 
+        padding: 15px; 
         text-align: center;
     }
 
     .data {
-        margin-top: 10px; /* Espaçamento entre a hero e o elemento data */
+        margin-top: 10px; 
     }
 
     .weather {
-        margin-top: 1px; /* Espaçamento entre os elementos data e weather */
+        margin-top: 1px; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -129,7 +129,7 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .hero {
-        height: 75vh; /* Ajuste a altura conforme necessário */
+        height: 75vh; 
     }
 
     .data, .weather {
@@ -151,7 +151,7 @@ h2 {
 
 @media (min-width: 1024px) {
     .hero {
-        height: 75vh; /* Ajuste a altura conforme necessário */
+        height: 75vh;
     }
 
     .data, .weather {
@@ -171,7 +171,7 @@ h2 {
     }
 
     footer {
-        position: static; /* Remove a posição absoluta */
+        position: static; 
         bottom: 0;
         width: 100%;
     }
