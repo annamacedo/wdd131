@@ -4,6 +4,8 @@
     --text-color: #FFFFFF;
     --header-bg-color: #002776;
     --font-family: Arial, sans-serif;
+    --container-bg-color: #FFFFFF; /* Fundo branco para data e weather */
+    --container-text-color: #000000; /* Texto preto para data e weather */
 }
 
 body {
@@ -28,27 +30,39 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Ocupa toda a largura */
 }
 
 .hero {
     width: 100%;
+    height: 50vh; /* Ajuste a altura conforme necessário */
+    overflow: hidden; /* Oculta a parte excedente da imagem */
 }
 
 .hero picture, .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
     display: block;
 }
 
+.content {
+    width: 100%; /* Ocupa toda a largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .data, .weather {
-    background-color: rgba(0, 39, 118, 0.8);
+    background-color: var(--container-bg-color); /* Fundo branco */
+    color: var(--container-text-color); /* Texto preto */
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
     width: 80%;
-    position: relative;
+    max-width: 600px;
+    text-align: left; /* Alinhamento do texto */
 }
 
 .data ul, .weather ul {
@@ -57,55 +71,109 @@ main {
     margin: 0;
 }
 
+.data ul li strong,
+.weather ul li strong {
+    font-weight: bold; /* Negrito */
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--header-bg-color);
     color: var(--text-color);
     width: 100%;
+    flex-shrink: 0; /* Garante que o footer não encolha */
 }
 
 h2 {
     color: var(--accent-color);
 }
 
-@media (min-width: 768px) {
+.data h2, .weather h2 {
+    color: var(--header-bg-color); /* Azul para os títulos "data" e "weather" */
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: var(--header-bg-color); /* Cor de fundo para telas pequenas */
+    }
+    .hero {
+        height: 80vh; /* Ajuste a altura conforme necessário */
+    }
+
     .data, .weather {
-        width: 60%;
+        width: calc(100% - 20px); /* Ocupa toda a largura com margem de 10px de cada lado */
+        margin: 10px; /* Margem para alinhamento */
+        padding: 15px; /* Ajuste o padding conforme necessário */
+        text-align: center;
+    }
+
+    .data {
+        margin-top: 10px; /* Espaçamento entre a hero e o elemento data */
+    }
+
+    .weather {
+        margin-top: 1px; /* Espaçamento entre os elementos data e weather */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-icon::after {
+        content: '⛅';
+        font-size: 1.5em;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        height: 75vh; /* Ajuste a altura conforme necessário */
+    }
+
+    .data, .weather {
+        width: 40%;
+        position: absolute;
+        max-width: 300px;
+    }
+
+    .data {
+        top: 15%;
+        left: 1%;
+    }
+
+    .weather {
+        top: 63%;
+        right: 1%;
     }
 }
 
 @media (min-width: 1024px) {
     .hero {
-        position: relative;
+        height: 75vh; /* Ajuste a altura conforme necessário */
     }
 
-    .data {
-        width: 45%;
-        position: absolute;
-        top: 150px;
-        max-width: 300px;
-    }
-
-    .weather {
-        width: 45%;
-        position: absolute;
-        top: 650px;
-        max-width: 300px;
-    }
-
-    .data {
-        left: 3%;
-    }
-
-    .weather {
-        right: 3%;
-    }
-}
-
-@media (min-width: 1440px) {
     .data, .weather {
         width: 40%;
+        position: absolute;
+        max-width: 300px;
+    }
+
+    .data {
+        top: 15%;
+        left: 1%;
+    }
+
+    .weather {
+        top: 63%;
+        right: 1%;
+    }
+
+    footer {
+        position: static; /* Remove a posição absoluta */
+        bottom: 0;
+        width: 100%;
     }
 }
 
