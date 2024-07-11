@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
     <script defer src="scripts/filtered-temples.js"></script>
 </head>
 <body>
@@ -17,57 +16,16 @@
         <h1>Temple Album</h1>
         <button id="menu" aria-label="Toggle Navigation Menu">☰</button>
         <nav class="navigation">
-            <a href="#" title="Home">Home</a>
-            <a href="#" title="Old" class="active">Old</a>
-            <a href="#" title="New">New</a>
-            <a href="#" title="Large">Large</a>
-            <a href="#" title="Small">Small</a>
+            <a href="#" data-filter="all" title="Home">Home</a>
+            <a href="#" data-filter="old" title="Old">Old</a>
+            <a href="#" data-filter="new" title="New">New</a>
+            <a href="#" data-filter="large" title="Large">Large</a>
+            <a href="#" data-filter="small" title="Small">Small</a>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
-        <section class="gallery">
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/porto-alegre-temple.webp" width="800" height="600" alt="Porto Alegre Temple">
-                <figcaption>Porto Alegre Temple</figcaption>
-            </figure>
-        </section>
+        <div class="gallery"></div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> <span id="author"></span> <span id="location"></span></p>
