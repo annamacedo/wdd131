@@ -1,23 +1,23 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para o corpo da página */
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
-    color: #333;
+    color: #222; 
     padding: 20px;
     text-align: center;
 }
 
-/* Estilo para o cabeçalho */
+
 header {
-    background-color: #4a0f40;
+    background-color: #3a0c33; 
     color: white;
     padding: 20px 0;
     margin-bottom: 20px;
@@ -28,32 +28,33 @@ header h1 {
     font-size: 2em;
 }
 
-/* Estilo para o formulário */
+
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #e0d5e8;
+    background-color: #d1c1e0; 
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-/* Estilo para legendas dos campos */
+
 legend {
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 15px;
+    color: #222; 
 }
 
-/* Estilo para rótulos dos campos */
+
 label {
     display: block;
     margin-bottom: 10px;
-    color: #555;
+    color: #333; 
 }
 
-/* Estilo para campos de entrada */
+
 input[type="text"],
 input[type="date"],
 select,
@@ -61,21 +62,20 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #888; 
     border-radius: 4px;
     font-size: 1em;
 }
 
-/* Estilo para caixas de seleção e botões de rádio */
+
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: 8px;
 }
 
-/* Estilo para o botão de envio */
+
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #388E3C; 
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -84,13 +84,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #2E7D32; 
 }
 
-/* Estilo para o rodapé */
+
 footer {
     margin-top: 30px;
     text-align: center;
-    color: #666;
+    color: #444; 
     font-size: 0.9em;
 }
