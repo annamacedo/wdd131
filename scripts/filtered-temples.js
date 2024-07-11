@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = temple.imageUrl;
         img.alt = temple.templeName;
         img.loading = 'lazy';
+        img.width = 400; 
+        img.height = 250; 
 
         const name = document.createElement('h3');
         name.textContent = temple.templeName;
@@ -155,14 +157,14 @@ document.addEventListener('DOMContentLoaded', () => {
         displayTemples(filteredTemples);
     }
 
-    document.querySelectorAll('.navigation a').forEach(link => {
-        link.addEventListener('click', (event) => {
+    const navigationLinks = document.querySelectorAll('.navigation a');
+    navigationLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
             event.preventDefault();
-            const filter = event.target.getAttribute('data-filter');
+            const filter = this.getAttribute('data-filter');
             filterTemples(filter);
         });
     });
 
-    // Initial display
-    filterTemples('home');
+    filterTemples('all');
 });
