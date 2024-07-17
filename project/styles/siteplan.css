@@ -1,0 +1,99 @@
+/* Root Variables */
+:root {
+  --primary-color: #16DF7E;
+  --secondary-color: #F3F3FE;
+  --success-color: #2CB859;
+  --warning-color: #EAC648;
+  --danger-color: #E75858;
+  --neutrals-color: #2E3E4B;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Open Sans';
+  font-size: 1rem; /* Default font size */
+  line-height: 1.5; /* Default line height */
+  max-width: 1280px;
+  margin: 0 auto; /* Center content */
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: var(--secondary-color);
+  text-align: left;
+}
+
+/* Headline Styles */
+h1, .headline {
+  font-family: 'Open Sans';
+  font-weight: 700; /* bold */
+  font-size: 2.5rem; /* Heading font size */
+  margin-top: 0; /* Remove default margin */
+  color: var(--secondary-color);
+}
+
+/* Subheading Styles */
+h2, .subheading {
+  font-family: 'Open Sans';
+  font-weight: 700; /* semi-bold */
+  font-size: 2rem; /* Subheading font size */
+  color: var(--primary-color);
+}
+
+/* Title Styles */
+h3, .titles {
+  font-family: 'Open Sans';
+  font-weight: 700; /* semi-bold */
+  font-size: 1.5rem; /* Title font size */
+  color: var(--neutrals-color);
+}
+
+/* Subtitle Styles */
+h4, .subtitles {
+  font-family: 'Open Sans';
+  font-weight: 600; /* semi-bold */
+  font-size: 1rem; /* Subtitle font size */
+  color: var(--secondary-color);
+}
+
+/* Paragraph Styles */
+p {
+  font-family: 'Open Sans';
+  font-size: 1rem; /* Body text font size */
+  line-height: 1.5; /* Body text line height */
+  color: var(--neutrals-color);
+  padding: 10px 0; /* Adjust padding */
+}
+
+/* Label Styles */
+label {
+  font-family: 'Open Sans';
+  font-size: 0.9rem; /* Label font size */
+  color: var(--neutrals-color);
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+  }
+    
+  nav a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+    
+  nav a:link, nav a:visited {
+    color: var(--primary-color);
+  }
+    
+  nav a:hover {
+    color: var(--neutrals-color);
+    background-color: var(--neutrals-color);
+  }
