@@ -12,3 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     locationSpan.textContent = 'Rio Grande do Sul, Brazil';
     lastModifiedSpan.textContent = lastModified;
 });
+
+const hamButton = document.querySelector('.hamburguer'); 
+    const navigation = document.querySelector('.navigation'); 
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open'); 
+        hamButton.classList.toggle('open'); 
+    });
