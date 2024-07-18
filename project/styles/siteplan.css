@@ -1,17 +1,19 @@
 /* Root Variables */
 :root {
-  --primary-color: #16DF7E;
-  --secondary-color: #F3F3FE;
-  --success-color: #2CB859;
-  --warning-color: #EAC648;
-  --danger-color: #E75858;
-  --neutrals-color: #2E3E4B;
+  --primary-color: #E47912;
+  --secondary-color: #396E94;
+  --accent1-color: #241466;
+  --accent2-color: #E7C24F;
+  --nav-background-color: #FFFFFF; 
+  --nav-link-color: #000000; 
+  --nav-hover-link-color: #396E94; 
+  --nav-hover-background-color: #E7C24F;
 }
 
 /* Body Styles */
 body {
-  font-family: 'Open Sans';
-  font-size: 1rem; /* Default font size */
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Default font size */
   line-height: 1.5; /* Default line height */
   max-width: 1280px;
   margin: 0 auto; /* Center content */
@@ -28,72 +30,80 @@ header {
 
 /* Headline Styles */
 h1, .headline {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700; /* bold */
-  font-size: 2.5rem; /* Heading font size */
+  font-size: 30px; /* Heading font size */
   margin-top: 0; /* Remove default margin */
-  color: var(--secondary-color);
+  color: var(--nav-background-color);
 }
 
 /* Subheading Styles */
 h2, .subheading {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700; /* semi-bold */
-  font-size: 2rem; /* Subheading font size */
+  font-size: 25px; /* Subheading font size */
   color: var(--primary-color);
 }
 
 /* Title Styles */
 h3, .titles {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700; /* semi-bold */
-  font-size: 1.5rem; /* Title font size */
-  color: var(--neutrals-color);
+  font-size: 20px; /* Title font size */
+  color: var(--secondary-color);
 }
 
 /* Subtitle Styles */
 h4, .subtitles {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600; /* semi-bold */
-  font-size: 1rem; /* Subtitle font size */
-  color: var(--secondary-color);
+  font-size: 16px; /* Subtitle font size */
+  color: var(--nav-background-color);
 }
 
 /* Paragraph Styles */
 p {
-  font-family: 'Open Sans';
-  font-size: 1rem; /* Body text font size */
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Body text font size */
   line-height: 1.5; /* Body text line height */
-  color: var(--neutrals-color);
+  color: var(--nav-link-color);
   padding: 10px 0; /* Adjust padding */
 }
 
 /* Label Styles */
 label {
-  font-family: 'Open Sans';
-  font-size: 0.9rem; /* Label font size */
-  color: var(--neutrals-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px; /* Label font size */
+  color: var(--nav-link-color);
+}
+
+/* Special Callout Styles */
+.callout {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Callout font size */
+  font-style: italic; /* Callout font style */
+  color: var(--secondary-color);
 }
 
 /* Navigation Styles */
 nav {
-    background-color: var(--primary-color);
-    font-size: 1.2rem;
-    display: flex;
-  }
-    
-  nav a {
-    display: block;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 1rem;
-  }
-    
-  nav a:link, nav a:visited {
-    color: var(--primary-color);
-  }
-    
-  nav a:hover {
-    color: var(--neutrals-color);
-    background-color: var(--neutrals-color);
-  }
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+  
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+  
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+  
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
