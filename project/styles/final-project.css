@@ -130,8 +130,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     text-align: center;
-    width: 100%; 
-    height: auto;
 }
 
 .home img {
@@ -158,7 +156,7 @@ main {
 }
 
 .newsletter-form input {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px); /* Consider padding in input width */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -487,7 +485,7 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%; 
+    width: 100%; /* ou um tamanho específico em pixels */
     height: 300px
 }
 
