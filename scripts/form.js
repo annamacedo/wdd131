@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
         option.textContent = `${product.name} (Rating: ${product['avg-rating']})`;
         productNameSelect.appendChild(option);
     });
+
+    incrementReviewCounter(); 
 });
 
 function incrementReviewCounter() {
@@ -35,11 +37,22 @@ function incrementReviewCounter() {
         count = count ? parseInt(count) : 0;
         count++;
         localStorage.setItem("reviewCount", count);
+        updateTotalReviews(count); 
     } else {
         console.log("localStorage is not supported by this browser.");
     }
 }
 
-window.onload = function() {
-    incrementReviewCounter();
-};
+function updateTotalReviews(count) {
+    const totalReviewsSpan = document.getElementById('totalReviews');
+    totalReviewsSpan.textContent = count;
+}
+
+function getReviewCount() {
+    if (typeof(Storage) !== "undefined") {
+        return localStorage.getItem("reviewCount") || 0;
+    } else {
+        console.log("localStorage is not supported by this browser.");
+        return 0;
+    }
+}

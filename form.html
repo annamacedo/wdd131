@@ -75,6 +75,16 @@
     <footer>
         <p>&copy; <span id="year"></span> <span id="author"></span> <span id="location"></span></p>
         <p>Last Modification: <span id="last-modified"></span></p>
+        <!-- Exibição do número total de revisões concluídas -->
+        <p>Total Reviews Completed: <span id="totalReviews"></span></p>
     </footer>
+    
+    <script src="scripts/form.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalReviewsSpan = document.getElementById('totalReviews');
+            totalReviewsSpan.textContent = getReviewCount();
+        });
+    </script>
 </body>
 </html>
